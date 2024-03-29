@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Obrazac za rezervaciju</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="autor" content="Tea Radić">
+        <meta name="datum" content="26.3.2023.">
+        <meta name="opis" content="Prva zadaća iz OWT">
+        <meta name="kljucneRijeci" content="OWT,zadaca,hotel">
+        <link rel="stylesheet" type="text/css" href="../css/tradic21.css">
+        <link rel="stylesheet" type="text/css" href="../css/tradic21_responzivni_dizajn.css">
+    </head>
+    <body>
+        <header>
+          <div id="sakriveno">
+            <div id="tekstSakriveno">Izbornik</div>
+        <div id="navigacija1">
+        <ul id="navigacija">
+            <li><a href="../index.html">Početna stranica</a></li>
+          <li><a href="../dokumentacija/autor.html">O autoru</a></li>
+          <li><a href="../dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+          <li><a href="../ostalo/obrazac_kontakt.html">Kontakt</a></li>
+          <li><a href="../ostalo/obrazac_rezervacija.html" class="trenutna">Rezervacija</a></li>
+          <li><a href="../ostalo/cjenik_usluga.html">Cjenik usluga</a></li>
+          <li><a href="../ostalo/galerija_slika.html">Galerija</a></li>
+          <li><a href="../ostalo/interaktivna_slika.html">Interaktivna slika</a></li>
+          <li><a href="../ostalo/karta_lokacije.html">Lokacija</a></li>
+          <li><a href="../ostalo/video.html">Video</a></li>
+        </ul>
+        </div>
+    </div> 
+
+
+        <a href="../index.html"><img id="logo" src="../dokumenti/slike/logo.jpg" alt="logo"></a>
+        <h1>Obrazac za rezervaciju</h1>  
+        </header>
+        <main>
+            <form id="rezervacijaForm" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="post" novalidate>
+                <fieldset class="obrazacRezervacija">
+                  <legend>Osobni podaci</legend>
+                  <label for="ime">Ime:</label>
+                  <input type="text" class="" id="ime" name="ime"><br>
+              
+                  <label for="prezime">Prezime:</label>
+                  <input type="text" class="" id="prezime" name="prezime"><br>
+              
+                  <label for="telefon">Broj telefona:</label>
+                  <input type="tel" class="" id="telefon" name="telefon" placeholder="012-345-6789"><br>
+
+                  <label for="email">Email adresa:</label>
+                  <input type="email" class="" id="email" name="email" placeholder="primjer@email.com"><br>
+                  </fieldset>
+              
+                <fieldset class="obrazacRezervacija">
+                  <legend>Detalji rezervacije</legend>
+                  <label for="brojodraslih">Broj odraslih:</label>
+                  <input type="number" id="brojodraslih" name="brojodraslih" min="1" max="10"><br>
+                  
+                  <label for="brojdjece">Broj djece:</label>
+                  <input type="number" id="brojdjece" name="brojdjece" min="1" max="10"><br>
+
+                  <label for="datumdolaska">Datum dolaska:</label>
+                  <input type="date" id="datumdolaska" name="datumdolaska"><br>
+              
+                  <label for="datumodlaska">Datum odlaska:</label>
+                  <input type="date" id="datumodlaska" name="datumodlaska"><br>
+
+                  <label for="vrijemedolaska">Vrijeme dolaska:</label>
+                  <input type="time" id="vrijemedolaska" name="vrijemedolaska"><br>
+
+                  <label for="smjestaj">Vrsta sobe:</label>
+                  <select id="smjestaj" name="smjestaj">
+                    <option value="jednokrevetna">Jednokrevetna</option>
+                    <option value="dvokrevetna">Dvokrevetna</option>
+                    <option value="trokrevetna">Trokrevetna</option>
+                    <option value="trokrevetnapomocni">Trokrevetna+pomoćni ležaj</option>
+                  </select><br>
+
+                  <p>Broj soba: </p>
+                  <div id="obrazacRezervacijaRadio">
+			            <input type="radio" value="jedna" name="brojsoba" id="brojsoba1">
+                  <label for="brojsoba1">1</label>
+		              <input type="radio" value="dvije" name="brojsoba" id="brojsoba2">
+                  <label for="brojsoba2">2</label>
+			            <input type="radio" value="tri" name="brojsoba" id="brojsoba3">
+                  <label for="brojsoba3">3</label>
+                  <input type="radio" value="cetiri" name="brojsoba" id="brojsoba4">
+                  <label for="brojsoba4">4</label>
+                  <input type="radio" value="pet" name="brojsoba" id="brojsoba5">
+                  <label for="brojsoba5">5</label>
+                  <input type="radio" value="sest" name="brojsoba" id="brojsoba6">
+                  <label for="brojsoba6">6</label>
+                  <input type="radio" value="sedam" name="brojsoba" id="brojsoba7">
+                  <label for="brojsoba7">7</label>
+                  <br>
+                </div>
+								                
+                  </fieldset>
+              
+                <button type="submit">Pošalji</button>
+                <button type="reset">Resetiraj</button>
+              </form>
+              <div id="error-message">
+                <p>Niste ispravno popunili sva polja!</p>
+              </div>
+              <script src="../jsk/tradic21.js"></script>
+           </main>
+           <footer>
+            &copy; 2023 Tea Radić
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+              <img id="ikona1" src="../dokumenti/slike/cc.png" alt="CC BY-NC">
+            </a>
+            <a href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2023/zadaca_01/tradic21/ostalo/obrazac_rezervacija.html">
+              <img id="ikona2" src="../dokumenti/slike/HTML5.png" alt="HTML5 Validator"></a>
+        </footer>
+    </body>
+</html>

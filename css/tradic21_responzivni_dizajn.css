@@ -1,0 +1,229 @@
+@media only screen and (max-width: 480px) {
+  .obrazacRezervacija {
+    display: block;
+  }
+
+  label {
+    display: block;
+  }
+
+  .obrazacRezervacijaRadio {
+    display: flex;
+  }
+
+  #galerija {
+    grid-template-columns: auto;
+  }
+
+  #galerija img{
+    width: 100%;
+    height: auto;
+  }
+
+  #galerija img:hover{
+    width: 100%;
+    height: auto;
+  }
+
+
+  td, th{
+    display:none;
+  }
+
+  .maliVidljiv{
+    display:block;
+  }
+   
+  
+
+#sakriveno {
+  width: 100%;
+  background-color: brown;
+  text-align: center;
+
+  color: white;
+  font-weight: bold;
+  width: 90%;
+  padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  display: block;
+}
+
+#navigacija1 {
+  display: none;
+}
+
+#sakriveno:hover #navigacija1 {
+  display: block;
+}
+
+form {
+  width: 100%;
+}
+
+fieldset {
+  padding-right: 10px;
+}
+
+
+
+input[type="text"], textarea {
+  width: 90%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  float: left;
+}
+
+label input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+    vertical-align: middle;
+}
+
+button[type="submit"] {
+  width: 90%;
+}
+
+button[type="reset"] {
+  width: 90%;
+}
+
+#InteraktivnaSlika {
+  display:none;
+}
+}
+
+  
+  @media only screen and (max-width: 1024px) and (min-width: 481px) {
+    h1{
+      color: #D0B0B0;
+  }
+  
+  h2#naslov2{
+      color: #D0B0B0;
+  }
+  
+  h3{
+      color:white;
+  }
+
+    table caption {
+      color: #D0B0B0;
+    }
+
+    #navigacija {
+      background-color: #D3E9F7;
+    }
+
+    #navigacija li a {
+      color:black;
+    }
+
+    #navigacija li a:hover {
+      background-color: #abd6f1;
+    }
+
+    body {
+      background-color: #05052D;
+      color:white;
+    }
+
+    #naslovna1, #naslovna2 {
+      background-color: #191967;
+      border: 5px solid #FF7FFF;
+    }
+
+    [alt~="palme"] {
+      border: 5px solid #0000FF;
+    }
+
+    a[class="nav-link"] {
+      color: #D3E9F7;
+    }
+    
+    a[class="nav-link"]:hover {
+      color: white;
+    }
+
+    p::first-letter {
+      color: #5AD5D5;
+    }
+
+    p > b {
+      background-color: #0000FF;
+    }
+
+    .linkNaslovna {
+      color:#5AD5D5;
+    }
+
+    table th {
+      background-color: #D0B0B0;
+      border: 1px solid white;
+    }
+  
+    table td {
+      border: 1px solid white;
+    }
+  
+    table caption{
+      color: #D0B0B0;
+    }
+    
+    tr:nth-child(even){
+      background-color: #051e3d;
+    }
+  
+    tr:hover {
+      background-color:#214778;
+  }
+
+  #interaktivna {
+    background-color: #00493E;
+    border: 1px solid white;
+  }
+
+  div + p {
+    color:#74FFFF;
+  }
+
+  button {
+    background-color: #D3E9F7;
+  }
+
+  #video {
+    background-image: linear-gradient(#166985,#00001F);
+    border: 5px solid #D3E9F7;
+  }
+
+    .list-group-item {
+      color: white;
+    }
+
+    #tekstSakriveno  {
+      display: none;
+    }
+}
+
+  
+  @media only screen and (min-width: 1025px) {
+    .obrazacRezervacija {
+      display: inline-block;
+      width:40%;
+      vertical-align: top;
+      margin-right: 50px;
+      margin-bottom: 100px;
+    }
+
+    #tekstSakriveno {
+      display: none;
+    }
+
+  }

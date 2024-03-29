@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Obrazac za kontakt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="autor" content="Tea Radić">
+        <meta name="datum" content="26.3.2023.">
+        <meta name="opis" content="Prva zadaća iz OWT">
+        <meta name="kljucneRijeci" content="OWT,zadaca,hotel">
+        <link rel="stylesheet" type="text/css" href="../css/tradic21.css">
+        <link rel="stylesheet" type="text/css" href="../css/tradic21_responzivni_dizajn.css">
+    </head>
+    <body>
+        <header>
+            <div id="sakriveno">
+                <div id="tekstSakriveno">Izbornik</div>
+            <div id="navigacija1">
+            <ul id="navigacija">
+                <li><a href="../index.html">Početna stranica</a></li>
+              <li><a href="../dokumentacija/autor.html">O autoru</a></li>
+              <li><a href="../dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+              <li><a href="../ostalo/obrazac_kontakt.html" class="trenutna">Kontakt</a></li>
+              <li><a href="../ostalo/obrazac_rezervacija.html">Rezervacija</a></li>
+              <li><a href="../ostalo/cjenik_usluga.html">Cjenik usluga</a></li>
+              <li><a href="../ostalo/galerija_slika.html">Galerija</a></li>
+              <li><a href="../ostalo/interaktivna_slika.html">Interaktivna slika</a></li>
+              <li><a href="../ostalo/karta_lokacije.html">Lokacija</a></li>
+              <li><a href="../ostalo/video.html">Video</a></li>
+            </ul>
+            </div>
+        </div> 
+
+
+
+            <a href="../index.html"><img id="logo" src="../dokumenti/slike/logo.jpg" alt="logo"></a>
+            <h1>Obrazac za kontakt</h1>
+        </header>
+        <main>
+            <form id="kontaktForm" enctype="multipart/form-data" method="POST" action="https://spider.foi.hr/UWT/materijali/ispis_forme.php" novalidate>
+            <fieldset>
+            <input type="text" class="" id="predmet" name="predmet" placeholder="Unesite predmet poruke od maksimalno 30 znakova"><br><br>
+            <input type="radio" value="1" name="vrstaupita">Upit za informacijama<br>
+            <input type="radio" value="2" name="vrstaupita">Rezervacija<br>
+            <input type="radio" value="3" name="vrstaupita">Reklamacija<br>
+            <input type="radio" value="4" name="vrstaupita">Ostalo<br><br>
+            <textarea class="" id="poruka" name="poruka" rows="10" cols="40" placeholder="Ovdje unesite svoju poruku od maksimalno 1000 znakova."></textarea><br>
+            <button type="submit" id="submit-button">Pošalji</button>
+            </fieldset>
+            </form>
+            <div id="error-message">
+                <p>Niste ispravno popunili sva polja!</p>
+              </div>
+            <script src="../jsk/tradic21.js"></script>
+           </main>
+           <footer>
+            &copy; 2023 Tea Radić
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+              <img id="ikona1" src="../dokumenti/slike/cc.png" alt="CC BY-NC">
+            </a>
+            <a href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2023/zadaca_01/tradic21/ostalo/obrazac_kontakt.html">
+              <img id="ikona2" src="../dokumenti/slike/HTML5.png" alt="HTML5 Validator"></a>
+        </footer>
+    </body>
+</html>
